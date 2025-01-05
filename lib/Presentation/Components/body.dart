@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:note/Presentation/Components/functions/get_vertical_divider.dart';
 import 'package:note/Presentation/Components/left_sction.dart';
 import 'package:note/Presentation/Components/right_sction.dart';
 import 'package:note/data/list_notes.dart';
@@ -27,11 +28,7 @@ class Body extends StatelessWidget {
                 mainAxisSize: MainAxisSize.max,
                 children: [
                   LeftSction(),
-                  VerticalDivider(
-                    thickness: 1,
-                    color: AppColor.primaryBackground,
-                    width: 1,
-                  ),
+                  getVerticalDivider(),
                   RightSction(notesCard: notesCard),
                 ],
               ),
